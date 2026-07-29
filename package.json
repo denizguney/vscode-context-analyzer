@@ -1,1 +1,33 @@
-
+{
+  "name": "vscode-context-analyzer",
+  "displayName": "VSCode Context Analyzer",
+  "description": "A lightweight extension utility for analyzing component states and context data within the editor.",
+  "version": "0.1.0",
+  "publisher": "denizguney",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-context-analyzer.analyzeContext",
+        "title": "Analyze Context Data"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/vscode": "^1.75.0",
+    "typescript": "^4.9.0"
+  }
+}
