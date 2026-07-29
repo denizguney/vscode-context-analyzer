@@ -31,3 +31,16 @@
     "typescript": "^4.9.0"
   }
 }
+
+"contributes": {
+    "commands": [
+      {
+        "command": "vscode-context-analyzer.analyzeContext",
+        "title": "Analyze Context Data (Stats)"
+      },
+      {
+        "command": "vscode-context-analyzer.checkAccessibility",
+        "title": "Check Accessibility (A11y)"
+      }
+    ]
+  }
